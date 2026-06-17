@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Availability – AdShubh Lifeline</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="availability">
+  <div id="site-header"></div>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Blood Availability</h1>
+      <p>Live inventory status across all blood groups. Updated automatically from donor records and requests.</p>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="container">
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px" class="reveal">
+        <span class="badge badge-inv-healthy">Healthy — Adequate stock</span>
+        <span class="badge badge-inv-low">Low Stock — Monitor closely</span>
+        <span class="badge badge-inv-critical">Critical — Immediate action needed</span>
+      </div>
+
+      <div id="availabilityGrid" class="inventory-grid reveal"></div>
+
+      <div class="card reveal" style="margin-top:32px;text-align:center">
+        <h3 style="margin-bottom:8px">Help Restock Critical Groups</h3>
+        <p class="text-muted" style="margin-bottom:16px">Register as a donor to increase available blood units in your community.</p>
+        <a href="become-donor.html" class="btn btn-primary">Become Donor</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="site-footer"></div>
+  <script src="js/storage.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

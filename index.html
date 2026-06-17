@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AdShubh Lifeline – Smart Blood Donation & Emergency Response Platform">
+  <title>AdShubh Lifeline – Smart Blood Donation Platform</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+  <div id="site-header"></div>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content reveal">
+          <div class="hero-tag">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Trusted Healthcare Platform
+          </div>
+          <h1>Every Donation Creates Another Chance at Life</h1>
+          <p>Connect donors, recipients, hospitals, and volunteers through one trusted blood donation platform.</p>
+          <div class="hero-actions">
+            <a href="become-donor.html" class="btn btn-primary">Become Donor</a>
+            <a href="find-blood.html" class="btn btn-secondary">Find Blood</a>
+          </div>
+        </div>
+        <div class="hero-preview reveal">
+          <div class="hero-preview-header">
+            <span class="dot" style="background:#EF4444"></span>
+            <span class="dot" style="background:#F59E0B"></span>
+            <span class="dot" style="background:#22C55E"></span>
+            <span style="font-size:.75rem;color:var(--muted);margin-left:8px">Live Dashboard Preview</span>
+          </div>
+          <div class="hero-preview-body">
+            <div class="stat-grid" style="margin-bottom:16px">
+              <div class="stat-card primary"><div class="stat-icon">🩸</div><div class="stat-value" data-stat="totalDonors">0</div><div class="stat-label">Total Donors</div></div>
+              <div class="stat-card success"><div class="stat-icon">✓</div><div class="stat-value" data-stat="activeDonors">0</div><div class="stat-label">Active Donors</div></div>
+              <div class="stat-card accent"><div class="stat-icon">📦</div><div class="stat-value" data-stat="availableBloodUnits">0</div><div class="stat-label">Blood Units</div></div>
+              <div class="stat-card warning"><div class="stat-icon">🚨</div><div class="stat-value" data-stat="emergencyRequests">0</div><div class="stat-label">Emergency Requests</div></div>
+            </div>
+            <div id="heroInventoryPreview" class="inventory-grid"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section impact-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Live Impact Dashboard</h2>
+        <p>Real-time statistics powered by actual platform data — no demo values.</p>
+      </div>
+      <div class="stat-grid reveal">
+        <div class="stat-card primary"><div class="stat-icon">🩸</div><div class="stat-value" data-stat="totalDonations">0</div><div class="stat-label">Total Donations</div></div>
+        <div class="stat-card success"><div class="stat-icon">❤</div><div class="stat-value" data-stat="livesSaved">0</div><div class="stat-label">Lives Saved</div></div>
+        <div class="stat-card accent"><div class="stat-icon">👥</div><div class="stat-value" data-stat="activeDonors">0</div><div class="stat-label">Active Donors</div></div>
+        <div class="stat-card primary"><div class="stat-icon">✓</div><div class="stat-value" data-stat="successfulRequests">0</div><div class="stat-label">Successful Requests</div></div>
+        <div class="stat-card warning"><div class="stat-icon">📦</div><div class="stat-value" data-stat="availableBloodUnits">0</div><div class="stat-label">Blood Units Available</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>How It Works</h2>
+        <p>A simple, connected workflow from registration to life-saving donation.</p>
+      </div>
+      <div class="grid-3 reveal">
+        <div class="card">
+          <div class="trust-icon" style="margin-bottom:12px">1</div>
+          <h3>Register as Donor</h3>
+          <p class="text-muted">Complete a professional multi-step registration. Your profile enters pending verification.</p>
+          <a href="become-donor.html" class="btn btn-outline btn-sm" style="margin-top:12px">Become Donor</a>
+        </div>
+        <div class="card">
+          <div class="trust-icon" style="margin-bottom:12px">2</div>
+          <h3>Admin Verification</h3>
+          <p class="text-muted">Every donor and request is verified by admin before appearing in search results.</p>
+          <a href="admin/verification.html" class="btn btn-outline btn-sm" style="margin-top:12px">Verification Center</a>
+        </div>
+        <div class="card">
+          <div class="trust-icon" style="margin-bottom:12px">3</div>
+          <h3>Save Lives</h3>
+          <p class="text-muted">Find compatible donors instantly or submit emergency requests with priority levels.</p>
+          <a href="find-blood.html" class="btn btn-outline btn-sm" style="margin-top:12px">Find Blood</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--card);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Trust & Verification</h2>
+        <p>Built-in credibility features that make every interaction trustworthy.</p>
+      </div>
+      <div class="trust-grid reveal">
+        <div class="trust-item card"><div class="trust-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></div><div><strong>Verified Donor Badge</strong><p class="text-muted" style="font-size:.875rem">Only admin-approved donors appear in search.</p></div></div>
+        <div class="trust-item card"><div class="trust-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div><strong>Verified Request Badge</strong><p class="text-muted" style="font-size:.875rem">Emergency requests verified before processing.</p></div></div>
+        <div class="trust-item card"><div class="trust-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg></div><div><strong>Admin Approved</strong><p class="text-muted" style="font-size:.875rem">Full verification workflow with status timeline.</p></div></div>
+        <div class="trust-item card"><div class="trust-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><div><strong>Last Updated Timestamp</strong><p class="text-muted" style="font-size:.875rem">Every record shows when it was last updated.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid-2 reveal">
+        <div>
+          <h2>Recent Activity</h2>
+          <p class="text-muted" style="margin-bottom:20px">Live feed of platform events with timestamps.</p>
+          <div class="card" id="homeActivity"></div>
+        </div>
+        <div>
+          <h2>Need Blood Urgently?</h2>
+          <p class="text-muted" style="margin-bottom:20px">Submit an emergency request with priority levels — Critical, High, or Normal.</p>
+          <div class="card">
+            <p style="margin-bottom:16px">Every request goes through admin verification before donors are notified.</p>
+            <a href="emergency-request.html" class="btn btn-primary">Submit Emergency Request</a>
+            <a href="blood-availability.html" class="btn btn-secondary" style="margin-left:8px">Check Availability</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="js/storage.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

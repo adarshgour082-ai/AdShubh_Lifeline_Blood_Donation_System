@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Become Donor – AdShubh Lifeline</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="become-donor">
+  <div id="site-header"></div>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Become Donor</h1>
+      <p>Register as a blood donor through our professional multi-step verification process.</p>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="container" style="max-width:640px">
+      <div class="steps-indicator reveal">
+        <div class="step-item active"><div class="step-num">1</div><div class="step-label">Personal Info</div></div>
+        <div class="step-item"><div class="step-num">2</div><div class="step-label">Blood Details</div></div>
+        <div class="step-item"><div class="step-num">3</div><div class="step-label">Availability</div></div>
+      </div>
+
+      <div class="card reveal" id="donorForm">
+        <div id="formSteps">
+          <div class="form-step active" data-step="1">
+            <div class="form-group">
+              <label for="donorName">Full Name <span class="required">*</span></label>
+              <input type="text" id="donorName" class="form-control" placeholder="Enter your full name" required>
+              <div class="form-error">Full name is required</div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="donorAge">Age <span class="required">*</span></label>
+                <input type="number" id="donorAge" class="form-control" min="18" max="65" placeholder="18-65" required>
+                <div class="form-error">Valid age required (18-65)</div>
+              </div>
+              <div class="form-group">
+                <label for="donorGender">Gender <span class="required">*</span></label>
+                <select id="donorGender" class="form-select" required>
+                  <option value="">Select gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Other">Other</option>
+                </select>
+                <div class="form-error">Please select gender</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="donorMobile">Mobile <span class="required">*</span></label>
+              <input type="tel" id="donorMobile" class="form-control" placeholder="+91 98765 43210" required>
+              <div class="form-error">Valid 10-digit mobile number required</div>
+            </div>
+            <div class="form-group">
+              <label for="donorEmail">Email <span class="required">*</span></label>
+              <input type="email" id="donorEmail" class="form-control" placeholder="you@email.com" required>
+              <div class="form-error">Valid email required</div>
+            </div>
+          </div>
+
+          <div class="form-step" data-step="2">
+            <div class="form-group">
+              <label for="donorBloodGroup">Blood Group <span class="required">*</span></label>
+              <select id="donorBloodGroup" class="form-select" required>
+                <option value="">Select blood group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+              </select>
+              <div class="form-error">Blood group is required</div>
+            </div>
+            <div class="form-group">
+              <label for="donorCity">City <span class="required">*</span></label>
+              <input type="text" id="donorCity" class="form-control" placeholder="Your city" required>
+              <div class="form-error">City is required</div>
+            </div>
+            <div class="form-group">
+              <label for="donorLastDonation">Last Donation Date</label>
+              <input type="date" id="donorLastDonation" class="form-control">
+              <div class="form-hint">Leave blank if never donated before</div>
+            </div>
+          </div>
+
+          <div class="form-step" data-step="3">
+            <div class="form-group">
+              <label for="donorAvailability">Availability Status <span class="required">*</span></label>
+              <select id="donorAvailability" class="form-select" required>
+                <option value="available">Available — Ready to donate</option>
+                <option value="on-call">On Call — Can respond quickly</option>
+                <option value="unavailable">Unavailable — Not donating currently</option>
+              </select>
+            </div>
+            <div class="card" style="background:var(--bg);margin-top:16px">
+              <p style="font-size:.875rem;color:var(--muted)"><strong>What happens next?</strong> Your registration will be submitted for admin verification. Once approved, you'll appear in donor search results with a Verified Donor badge.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-nav">
+          <button type="button" id="prevStep" class="btn btn-secondary" style="visibility:hidden">Back</button>
+          <button type="button" id="nextStep" class="btn btn-primary">Continue</button>
+        </div>
+      </div>
+
+      <div id="donorSuccess" class="card success-screen hidden reveal">
+        <div class="success-icon">✓</div>
+        <h2>Registration Submitted</h2>
+        <p class="text-muted" style="margin:12px 0 24px">Your profile is now <strong>Pending Verification</strong>. An admin will review and approve your registration shortly.</p>
+        <span class="badge badge-under-review" style="font-size:.875rem;padding:8px 16px;margin-bottom:24px;display:inline-flex">Pending Verification</span>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+          <a href="index.html" class="btn btn-primary">Back to Home</a>
+          <a href="find-blood.html" class="btn btn-secondary">Find Blood</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="site-footer"></div>
+  <script src="js/storage.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us – AdShubh Lifeline</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contact">
+  <div id="site-header"></div>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Reach out for support, partnerships, or general inquiries.</p>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="container">
+      <div class="grid-2 reveal">
+        <div class="card">
+          <h3 style="margin-bottom:16px">Send a Message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="contactName">Full Name</label>
+              <input type="text" id="contactName" class="form-control" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email</label>
+              <input type="email" id="contactEmail" class="form-control" placeholder="you@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <select id="contactSubject" class="form-select" required>
+                <option value="">Select subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="donor">Donor Support</option>
+                <option value="hospital">Hospital Partnership</option>
+                <option value="emergency">Emergency Assistance</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" class="form-control" rows="4" placeholder="How can we help?" required style="resize:vertical"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+
+        <div>
+          <div class="card" style="margin-bottom:16px">
+            <h3 style="margin-bottom:12px">Emergency Contact</h3>
+            <p class="text-muted" style="font-size:.9375rem">For immediate blood emergencies, call:</p>
+            <p style="font-size:1.5rem;font-weight:800;color:var(--primary);margin:8px 0">+91 108</p>
+            <a href="emergency-request.html" class="btn btn-primary btn-sm">Submit Emergency Request</a>
+          </div>
+          <div class="card">
+            <h3 style="margin-bottom:12px">Office</h3>
+            <p class="text-muted" style="font-size:.9375rem;line-height:1.8">
+              AdShubh Lifeline Platform<br>
+              admin@adshubhlifeline.in<br>
+              Mon–Sat, 9:00 AM – 6:00 PM IST
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="site-footer"></div>
+  <script src="js/storage.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Request – AdShubh Lifeline</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="emergency">
+  <div id="site-header"></div>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Emergency Blood Request</h1>
+      <p>Submit an urgent blood requirement. All requests are verified by admin before processing.</p>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="container" style="max-width:640px">
+      <form id="emergencyForm" class="card reveal">
+        <div class="form-group">
+          <label for="patientName">Patient Name <span class="required">*</span></label>
+          <input type="text" id="patientName" class="form-control" placeholder="Patient's full name" required>
+          <div class="form-error">Patient name is required</div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="requestBloodGroup">Blood Group Required <span class="required">*</span></label>
+            <select id="requestBloodGroup" class="form-select" required>
+              <option value="">Select blood group</option>
+              <option value="A+">A+</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+            </select>
+            <div class="form-error">Blood group is required</div>
+          </div>
+          <div class="form-group">
+            <label for="unitsRequired">Units Required <span class="required">*</span></label>
+            <input type="number" id="unitsRequired" class="form-control" min="1" max="10" value="1" required>
+            <div class="form-error">Units required (1-10)</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="hospitalName">Hospital Name <span class="required">*</span></label>
+          <input type="text" id="hospitalName" class="form-control" placeholder="Hospital or clinic name" required>
+          <div class="form-error">Hospital name is required</div>
+        </div>
+
+        <div class="form-group">
+          <label for="requestLocation">Location <span class="required">*</span></label>
+          <input type="text" id="requestLocation" class="form-control" placeholder="City, address" required>
+          <div class="form-error">Location is required</div>
+        </div>
+
+        <div class="form-group">
+          <label for="requestContact">Contact Number <span class="required">*</span></label>
+          <input type="tel" id="requestContact" class="form-control" placeholder="+91 98765 43210" required>
+          <div class="form-error">Valid contact number required</div>
+        </div>
+
+        <div class="form-group">
+          <label for="emergencyLevel">Emergency Level <span class="required">*</span></label>
+          <select id="emergencyLevel" class="form-select" required>
+            <option value="critical">Critical — Immediate need</option>
+            <option value="high">High — Within hours</option>
+            <option value="normal">Normal — Scheduled need</option>
+          </select>
+          <div style="margin-top:8px" id="levelPreview"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="medicalProof">Medical Proof / Reference</label>
+          <input type="text" id="medicalProof" class="form-control" placeholder="Doctor reference, case ID, or hospital letter">
+          <div class="form-hint">Provide any medical reference for faster verification</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%">Submit Emergency Request</button>
+      </form>
+
+      <div id="requestSuccess" class="card success-screen hidden reveal">
+        <div class="success-icon">✓</div>
+        <h2>Request Submitted</h2>
+        <p class="text-muted" style="margin:12px 0 24px">Your emergency request is pending admin verification. You will be notified once it is approved.</p>
+        <span class="badge badge-submitted" style="font-size:.875rem;padding:8px 16px;margin-bottom:24px;display:inline-flex">Submitted — Awaiting Verification</span>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+          <a href="find-blood.html" class="btn btn-primary">Find Blood Now</a>
+          <a href="blood-availability.html" class="btn btn-secondary">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="site-footer"></div>
+  <script src="js/storage.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>
