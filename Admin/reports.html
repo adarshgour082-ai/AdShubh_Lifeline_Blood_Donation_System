@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports – AdShubh Lifeline</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body data-page="reports">
+  <div id="admin-root" data-title="Reports">
+    <div class="card" style="margin-bottom:24px">
+      <div class="card-header" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+        <div><h3>Platform Report</h3><p>Summary generated from live stored data</p></div>
+        <button id="exportData" class="btn btn-primary btn-sm">Export JSON Report</button>
+      </div>
+      <div id="reportSummary"></div>
+    </div>
+  </div>
+
+  <script src="../js/storage.js"></script>
+  <script src="../js/utils.js"></script>
+  <script src="../js/layout.js"></script>
+  <script src="../js/pages.js"></script>
+</body>
+</html>

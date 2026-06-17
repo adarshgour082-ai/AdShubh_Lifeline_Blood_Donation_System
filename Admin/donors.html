@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donor Management – AdShubh Lifeline</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body data-page="donors">
+  <div id="admin-root" data-title="Donor Management">
+    <div class="card">
+      <div class="card-header" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+        <div><h3>All Donors</h3><p>Manage donor registrations and verification status</p></div>
+        <a href="../become-donor.html" class="btn btn-outline btn-sm">View Registration Page</a>
+      </div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Blood Group</th>
+              <th>City</th>
+              <th>Mobile</th>
+              <th>Availability</th>
+              <th>Status</th>
+              <th>Updated</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="donorsTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/storage.js"></script>
+  <script src="../js/utils.js"></script>
+  <script src="../js/layout.js"></script>
+  <script src="../js/pages.js"></script>
+</body>
+</html>

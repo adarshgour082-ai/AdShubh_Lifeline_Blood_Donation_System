@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard – AdShubh Lifeline</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body data-page="dashboard">
+  <div id="admin-root" data-title="Dashboard">
+    <div class="stat-grid" style="margin-bottom:24px">
+      <div class="stat-card primary"><div class="stat-icon">👥</div><div class="stat-value" data-stat="totalDonors">0</div><div class="stat-label">Total Donors</div></div>
+      <div class="stat-card success"><div class="stat-icon">✓</div><div class="stat-value" data-stat="verifiedDonors">0</div><div class="stat-label">Verified Donors</div></div>
+      <div class="stat-card warning"><div class="stat-icon">⏳</div><div class="stat-value" data-stat="pendingVerification">0</div><div class="stat-label">Pending Verification</div></div>
+      <div class="stat-card accent"><div class="stat-icon">📋</div><div class="stat-value" data-stat="activeRequests">0</div><div class="stat-label">Active Requests</div></div>
+      <div class="stat-card primary"><div class="stat-icon">📦</div><div class="stat-value" data-stat="availableBloodUnits">0</div><div class="stat-label">Available Blood Units</div></div>
+      <div class="stat-card warning"><div class="stat-icon">🚨</div><div class="stat-value" data-stat="emergencyRequests">0</div><div class="stat-label">Emergency Requests</div></div>
+      <div class="stat-card success"><div class="stat-icon">❤</div><div class="stat-value" data-stat="livesSaved">0</div><div class="stat-label">Lives Saved</div></div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-header"><h3>Blood Inventory Chart</h3><p>Available units by blood group</p></div>
+        <div id="inventoryChart" class="chart-bars"></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><h3>Inventory Alerts</h3><p>Groups needing attention</p></div>
+        <div id="inventoryAlerts" class="activity-feed"></div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:24px">
+      <div class="card-header"><h3>Activity Feed</h3><p>Real-time platform events</p></div>
+      <div id="adminActivity" class="activity-feed"></div>
+    </div>
+  </div>
+
+  <script src="../js/storage.js"></script>
+  <script src="../js/utils.js"></script>
+  <script src="../js/layout.js"></script>
+  <script src="../js/pages.js"></script>
+</body>
+</html>

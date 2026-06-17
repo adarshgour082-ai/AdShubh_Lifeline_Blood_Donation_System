@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Management – AdShubh Lifeline</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body data-page="requests">
+  <div id="admin-root" data-title="Request Management">
+    <div class="card">
+      <div class="card-header" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+        <div><h3>All Requests</h3><p>Manage emergency blood requests and fulfillment</p></div>
+        <a href="../emergency-request.html" class="btn btn-outline btn-sm">View Request Form</a>
+      </div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Patient</th>
+              <th>Blood Group</th>
+              <th>Units</th>
+              <th>Hospital</th>
+              <th>Priority</th>
+              <th>Status</th>
+              <th>Submitted</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="requestsTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/storage.js"></script>
+  <script src="../js/utils.js"></script>
+  <script src="../js/layout.js"></script>
+  <script src="../js/pages.js"></script>
+</body>
+</html>

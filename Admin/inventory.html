@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Inventory – AdShubh Lifeline</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body data-page="inventory">
+  <div id="admin-root" data-title="Blood Inventory">
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px">
+      <span class="badge badge-inv-healthy">Healthy</span>
+      <span class="badge badge-inv-low">Low Stock</span>
+      <span class="badge badge-inv-critical">Critical</span>
+    </div>
+    <div id="adminInventoryGrid" class="inventory-grid"></div>
+    <div class="card" style="margin-top:24px">
+      <p class="text-muted" style="font-size:.875rem">Inventory is calculated automatically from approved donor records and active/completed requests. Thresholds can be adjusted in <a href="settings.html">Settings</a>.</p>
+    </div>
+  </div>
+
+  <script src="../js/storage.js"></script>
+  <script src="../js/utils.js"></script>
+  <script src="../js/layout.js"></script>
+  <script src="../js/pages.js"></script>
+</body>
+</html>
