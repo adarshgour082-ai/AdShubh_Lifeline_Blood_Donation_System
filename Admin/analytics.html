@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics – AdShubh Lifeline</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body data-page="analytics">
+  <div id="admin-root" data-title="Analytics">
+    <div class="stat-grid" style="margin-bottom:24px">
+      <div class="stat-card primary"><div class="stat-value" data-stat="totalDonors">0</div><div class="stat-label">Total Donors</div></div>
+      <div class="stat-card success"><div class="stat-value" data-stat="verifiedDonors">0</div><div class="stat-label">Verified</div></div>
+      <div class="stat-card accent"><div class="stat-value" data-stat="totalRequests">0</div><div class="stat-label">Total Requests</div></div>
+      <div class="stat-card success"><div class="stat-value" data-stat="livesSaved">0</div><div class="stat-label">Lives Saved</div></div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-header"><h3>Donors by Blood Group</h3><p>Verified donors distribution</p></div>
+        <div id="bloodGroupChart" class="chart-bars"></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><h3>Request Status Breakdown</h3><p>All request statuses</p></div>
+        <div id="requestStatusChart" class="chart-bars"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/storage.js"></script>
+  <script src="../js/utils.js"></script>
+  <script src="../js/layout.js"></script>
+  <script src="../js/pages.js"></script>
+</body>
+</html>
